@@ -4,7 +4,7 @@
   description: |
     Gitlab CE is a free GitHub alternative
   minimum_rancher_version: v0.56.0
-  maintainer: "Alexis Ducastel <alexis@ducastel.net>"
+  maintainer: "Marcin Lewandowski <marcin@saepia.net>"
   uuid: gitlab-0
   questions:
     - variable: "gitlab_hostname"
@@ -29,18 +29,6 @@
       options:
         - 'http://'
         - 'https://'
-    - variable: "http_port"
-      description: "HTTP port to expose on host. Will be used to bind TCP"
-      label: "HTTP port:"
-      required: true
-      default: 80
-      type: "int"
-    - variable: "https_port"
-      description: "HTTPS port to expose on host. Will be used to bind TCP"
-      label: "HTTPS port:"
-      required: true
-      default: 443
-      type: "int"
     - variable: "ssh_port"
       description: "SSH port to expose on host. Will be used to bind TCP"
       label: "SSH port:"
