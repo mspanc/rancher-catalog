@@ -28,3 +28,8 @@ services:
           "X-Forwarded-Proto" => "https",
           "X-Forwarded-Ssl" => "on"
         }
+        registry_nginx['listen_https'] = false
+        registry_nginx['proxy_set_headers'] = {
+          "X-Forwarded-Proto" => "https",
+          "X-Forwarded-Ssl" => "on"
+        }
